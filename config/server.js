@@ -5,12 +5,12 @@ config.env = process.env.NODE_ENV;
 config.port =  process.env.PORT || 3000;
 config.clientDir = process.env.CLIENT_DIR || BrewUI.getStaticPath();
 config.mongo = {
-  connect: process.env.MONGODB_URI || 'mongodb://localhost/brew'
+  connect: process.env.MONGODB_URI || 'mongodb:/Users/jessekoester/git/brew'
 };
 
 config.spark = {
-  token: process.env.SPARK_TOKEN || 'token',
-  device1: process.env.SPARK_DEVICE1 || 'device-id'
+  token: process.env.SPARK_TOKEN || 'ec79d2d79e41d5048d951fb25f308cf3a99494ff',
+  device1: process.env.SPARK_DEVICE1 || '3b001d001147353236343033'
 };
 
 config.mock = process.env.MOCK || '';

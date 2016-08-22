@@ -20,7 +20,7 @@ var connected = false;
 var lastTempEvent = new Date();
 var lastPwmEvent = new Date();
 
-var CLOUD_URL = 'https://api.spark.io/v1/devices/';
+var CLOUD_URL = 'https://api.particle.io/v1/devices/';
 
 var core1;
 
