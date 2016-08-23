@@ -29,7 +29,7 @@ var Logger = require('./server/module/Logger');
 var Socket = require('./server/module/Socket');
 var routeHelper = require('./server/module/routeHelper');
 
-var BrewUI = require('brew-ui');
+var BrewUI = require('make-shift-brew-ui');
 BrewUI.isomorphic();
 
 var app = koa();
