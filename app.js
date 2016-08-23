@@ -140,8 +140,8 @@ app.use(function *(next) {
  */
 
 server = require('http').Server(app.callback());
-server.listen(config.port, function () {
-  Logger.info('Server is listening on ' + config.port, 'app', {
+server.listen(process.env.PORT || 5000, function () {
+  Logger.info('Server is listening on ' + process.env.PORT, 'app', {
     name: pkg.name,
     version: pkg.version,
     env: config.env
