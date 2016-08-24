@@ -1,4 +1,4 @@
-var BrewUI = require('brew-ui');
+var BrewUI = require('makeshift-aleworks-brew-ui');
 var config = {};
 
 config.env = process.env.NODE_ENV;
