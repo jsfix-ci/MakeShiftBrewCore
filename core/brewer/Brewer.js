@@ -132,7 +132,7 @@ brewChanged = function () {
         gallons: phase.gallons,
         min: phase.min,
         temp: phase.temp,
-        type: phase.type
+        type: phase.type,
         jobEnd: phase.jobEnd || null,
         inProgress: phase.inProgress,
         tempReached: phase.tempReached
