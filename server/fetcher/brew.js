@@ -17,6 +17,8 @@ exports.read = function () {
         return {
           min: phase.min,
           temp: phase.temp,
+          gallons: phase.gallons,
+          type: phase.type,
           inProgress: phase.inProgress,
           tempReached: phase.tempReached,
           jobEnd: phase.jobEnd
