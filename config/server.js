@@ -5,7 +5,7 @@ config.env = process.env.NODE_ENV;
 config.port =  process.env.PORT || 3000;
 config.clientDir = process.env.CLIENT_DIR || BrewUI.getStaticPath();
 config.mongo = {
-  connect: process.env.MONGODB_URI || 'mongodb://iad2-c5-0.mongo.objectrocket.com:52136'
+  connect: process.env.MONGODB_URI || 'mongodb://3d677a16e6b740e9a999633a954ab1fc/iad2-c5-0.mongo.objectrocket.com:52136,iad2-c5-1.mongo.objectrocket.com:52136,iad2-c5-2.mongo.objectrocket.com:52136'
 };
 
 config.spark = {
