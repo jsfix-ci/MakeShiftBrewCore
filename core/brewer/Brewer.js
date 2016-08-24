@@ -129,8 +129,10 @@ brewChanged = function () {
     paused: _actualBrew.paused,
     phases: _actualBrew.phases.map(function (phase) {
       return {
+        gallons: phase.gallons,
         min: phase.min,
         temp: phase.temp,
+        type: phase.type
         jobEnd: phase.jobEnd || null,
         inProgress: phase.inProgress,
         tempReached: phase.tempReached
