@@ -24,12 +24,16 @@ BrewSchema = new Schema({
 
   phases: [{
     min: Number,
-    temp: Number
+    temp: Number,
+    gallons: Number,
+    type: String
   }],
 
   logs: [{
     temp: Number,
     pwm: Number,
+    gallons: Number,
+    type: String,
     date: {
       type: Date,
       'default': Date.now
