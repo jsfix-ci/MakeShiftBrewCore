@@ -23,41 +23,17 @@ BrewSchema = new Schema({
   },
 
   phases: [{
-    min: {
-      type: Number,
-      required: false
-    },
-    temp:{
-      type: Number,
-      required: false
-    },
-    gallons:{
-      type: Number,
-      required: false
-    },
-    type: {
-      type: String,
-      required: true
-    }
+    min: Number,
+    temp: Number,
+    gallons: Number,
+    type:String
   }],
 
   logs: [{
-    min: {
-      type: Number,
-      required: false
-    },
-    temp:{
-      type: Number,
-      required: false
-    },
-    gallons:{
-      type: Number,
-      required: false
-    },
-    type: {
-      type: String,
-      required: true
-    },
+    min: Number,
+    temp: Number,
+    gallons: Number,
+    type:String,
     date: {
       type: Date,
       'default': Date.now
