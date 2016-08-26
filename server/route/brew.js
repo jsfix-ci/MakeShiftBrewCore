@@ -27,13 +27,13 @@ exports.create = function *(next) {
 
   // Create brew
   try {
+    console.log(phases);
     brew = yield Brew
       .create({
         name: name,
         phases: phases,
         startTime: startTime
       });
-      console.log(phases);
   } catch (err) {
     console.error(err);
     this.throw(500);
