@@ -26,14 +26,14 @@ BrewSchema = new Schema({
     min: Number,
     temp: Number,
     gallons: Number,
-    type: String
+    type:String
   }],
 
   logs: [{
+    min: Number,
     temp: Number,
-    pwm: Number,
     gallons: Number,
-    type: String,
+    type:String,
     date: {
       type: Date,
       'default': Date.now
