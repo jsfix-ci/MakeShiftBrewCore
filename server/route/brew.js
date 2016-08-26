@@ -33,6 +33,7 @@ exports.create = function *(next) {
         phases: phases,
         startTime: startTime
       });
+      console.log(phases);
   } catch (err) {
     console.error(err);
     this.throw(500);
