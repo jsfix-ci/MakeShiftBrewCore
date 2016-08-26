@@ -27,13 +27,13 @@ exports.create = function *(next) {
 
   // Create brew
   try {
-    console.log(phases);
     brew = yield Brew
       .create({
         name: name,
         phases: phases,
         startTime: startTime
       });
+      console.log(phases);
   } catch (err) {
     console.error(err);
     this.throw(500);
@@ -48,7 +48,7 @@ exports.create = function *(next) {
         min: phase.min,
         temp: phase.temp,
         gallons: phase.gallons,
- -      type: phase.type
+        type: phase.type
       };
     }),
     startTime: startTime
@@ -83,7 +83,7 @@ exports.get = function *(next) {
           min: phase.min,
           temp: phase.temp,
           gallons: phase.gallons,
- -        type: phase.type,
+          type: phase.type,
           inProgress: phase.inProgress,
           tempReached: phase.tempReached,
           jobEnd: phase.jobEnd
