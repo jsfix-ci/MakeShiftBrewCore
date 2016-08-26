@@ -47,6 +47,8 @@ exports.create = function *(next) {
       return {
         min: phase.min,
         temp: phase.temp,
+        gallons: phase.gallons,
+ -      type: phase.type
       };
     }),
     startTime: startTime
@@ -80,6 +82,8 @@ exports.get = function *(next) {
         return {
           min: phase.min,
           temp: phase.temp,
+          gallons: phase.gallons,
+ -        type: phase.type,
           inProgress: phase.inProgress,
           tempReached: phase.tempReached,
           jobEnd: phase.jobEnd
