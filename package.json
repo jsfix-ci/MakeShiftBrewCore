@@ -1,7 +1,7 @@
 {
   "name": "BrewCore",
   "version": "1.1.4",
-  "description": "MakeShife Aleworks BrewCore brewing system.",
+  "description": "MakeShife Aleworks BrewCore Brewing System.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "bower": "^1.6.5",
-    "make-shift-brew-ui": "1.5.3",
+    "make-shift-brew-ui": "1.5.4",
     "co-thunkify": "0.0.1",
     "koa": "^0.21.0",
     "koa-cors": "0.0.16",
